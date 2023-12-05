@@ -1,0 +1,42 @@
+.wavy {
+    position: relative;
+    -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0, 0, 0, .2));
+    border-radius: 30px;
+    background: linear-gradient(145deg, #b42121, #fd8f8f);
+    box-shadow: 20px 20px 60px #bebebe,
+        -20px -23px 60px #ffffff;
+    width: 40%;
+    margin-left: 33%;
+    user-select: none;
+
+}
+
+.wavy span {
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    text-transform: uppercase;
+    animation: wavy 1.5s infinite;
+    animation-delay: calc(0.1s * var(--i));
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+@keyframes wavy {
+
+    0%,
+    40%,
+    100% {
+        transform: translate(0);
+    }
+
+    20% {
+        transform: translateY(-26px);
+    }
+}
+
+.contents {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 8.4cm;
+}
